@@ -1,0 +1,85 @@
+:root {
+  --color1: #660743;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+
+body {
+  /* background: linear-gradient(
+    #476ab4,
+    rgb(176, 10, 87),
+    rgb(32, 142, 205),
+    rgb(15, 180, 117)
+  ); */
+  background: #333;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+.bloc {
+  margin: 50px 0;
+  transition: 1.3s ease;
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  background: rgb(34, 198, 165);
+  position: relative;
+}
+.star {
+  font-size: 3rem;
+  font-family: sans-serif;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: tomato;
+  top: 0;
+  right: 0;
+}
+li {
+  font-family: sans-serif;
+}
+.item1 > input[type="text"] {
+  padding: 10px;
+}
+ul > li:not(li:nth-child(1)) {
+  color: var(--color1);
+}
+
+.item1 input:checked + button {
+  background: palevioletred;
+}
+.item1 input:checked + li,
+button {
+  color: red;
+  font-size: 1.3rem;
+}
+button {
+  transition: 1.3s ease;
+  padding: 10px;
+  color: #f5ebeb;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  background: #b013ed;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  transition: 1.2s ease;
+  transform: translateY(20px);
+}
+.item1 input[type="text"] {
+  transition: 0.3s ease;
+  border-radius: 10px;
+  border: transparent;
+  margin: 10px 0;
+}
+.item1 input[type="text"]:focus {
+  outline: 3px solid rgb(184, 11, 112);
+}
